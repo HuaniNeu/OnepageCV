@@ -1,0 +1,113 @@
+/* Global styles
+------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body{
+  margin:10px;
+  font-family:'Raleway', sans-serif;
+  padding:0;
+}
+
+h1{
+  font-size: 45px;
+}
+
+h1, h2, header{
+  font-family:'Girassol', cursive;
+}
+
+header{
+  font-size: 20px;
+  text-align: center;
+  background: url(../images/network.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 10px;
+}
+
+.info{
+  color: white;
+}
+
+.details{
+  margin: 0px;
+}
+
+section{
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  border-bottom: 1px solid #343434
+ }
+
+section span{
+  text-decoration: underline;
+}
+
+.project-summary{
+  margin:10px;
+}
+
+img {
+  float: left;
+  width:150px; 
+  height:100px;
+  margin-right:15px;
+}
+
+a{
+  background: #80bfff;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+a:hover{
+  background:#b3e0ff;
+}
+
+ul{
+  overflow: hidden;
+}
+
+.grid-container{
+  display:grid;
+  grid-template-columns: 1fr 3fr;
+  column-gap: 20px;
+  grid-gap: 5px;
+  grid-auto-rows: 40px;
+  margin: 10px;
+  justify-content: space-between;
+  background-color: #eee;
+}
+.grid-item{
+  padding: 9px;
+}
+.grid-item:nth-child(odd){
+  background-color:lightgrey;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.grid-container-edu{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 20px;
+  grid-gap: 5px;
+  grid-auto-rows: 45px;
+  margin: 10px;
+  justify-content: space-between;
+  background-color: #eee;
+}
+
+.time{
+  color:red;
+}
