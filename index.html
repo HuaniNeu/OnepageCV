@@ -1,3 +1,27 @@
+
+     <?php
+  $name = $_POST['name'];
+  $visitor_email = $_POST['email'];
+  $message = $_POST['message'];
+
+  $email_from = 'huanineupane@gmail.com';
+
+  $email_subject = "New Form submission";
+
+  $email_body = "You have received a new message from the user $name.\n".
+                            "Here is the message:\n $message".
+  mail(to,subject,message,headers);
+
+
+  $to = "huanineupane@gmail.com";
+
+  $headers = "From: $email_from \r\n";
+
+  $headers .= "Reply-To: $visitor_email \r\n";
+
+  mail($to,$email_subject,$email_body,$headers);
+       ?>
+       
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +51,7 @@
       <!-- ************************ Profile ********************** -->
     <section>
         <h2>Career Objective</h2>
-        <p>Completed Master degree in Information Technology and is looking for a role in the technical sector where I can utilize my skills and contribute to the growth of organization as well as to further expand my knowledge on the forever emerging technologies. At the moment I am focused on web development. But I am particularly interested in making web user friendly. I am more focused on front-end and currently self-learning frameworks such as Vue and React</p>
+        <p>Completed Master degree in Information Technology and is looking for a role in the technical sector where I can utilize my skills and contribute to the growth of organization as well as to further expand my knowledge on the forever emerging technologies. At the moment I am focused on web development. But I am particularly interested in making web user friendly. I am more focused on front-end and currently self-learning frameworks such as Vue and React </p>
     </section>
 
         <!-- ****************** Skills ****************** -->
@@ -134,8 +158,9 @@
     <section>
       <h2>Ongoing online learnings</h2>
       <ul>
+      <li>Javascript Fundamental (via Pluralsight)</li><div class="time">April 2020</div>
       <li>CSS Essential Training (via LinkedinLearning)</li><div class="time">Jan 2020</div>
-      <li>Introduction to CSS</li><div class="time">Dec 2019</div>
+      <li>Introduction to CSS and HTML</li><div class="time">Dec 2019</div>
       <li>Web Development Foundation (via LinkedinLearning) </li><div class="time">Nov 2019</div>
       <li>PHP: Level 3 (via SymfonyCasts)</li><div class="time">Apr 2019</div>
       </ul>
@@ -153,16 +178,14 @@
      <h2>References</h2>
      <h3>Available upon request</h3>
    </section>
-
-      <!-- ************Form************ -->
+   <!-- ************Form************ -->
    <section>
     <h2>Ask me a question! :)</h2>
 
-        <form 
-  action="mailto:huanineupane@gmail.com"
+<!--         <form 
+  action="form-to-email.php"
   method="POST"
-  enctype="multipart/form-data"
-  name="EmailTestForm">
+  name="EmailForm">
         <label for="name">Your name: </label><br>
         <input type="text" id="name" name="name" placeholder="Huani"><br>
         <label for="question">Your question: </label><br>
@@ -170,14 +193,27 @@
         <label for="contact">How do I get back to you?</label><br>
         <label for="method">Email/Phone </label><br>
         <input type="contact" id="contact" name="contact" placeholder="041234567"><br><br>
-
         <input class = "form-submit-button" type="submit" value="Submit">
       </form> 
-      <br>
-     
+      <br> -->
+
+          <form method="post" name="myemailform" action="form-to-email.php">
+
+
+          Enter Name: <input type="text" name="name">
+
+          Enter Email Address:  <input type="text" name="email">
+
+          Enter Message:  <textarea name="message"></textarea>
+
+          <input type="submit" value="Send Form">
+
+          </form>
+   
    </section>
 
   </main>
+
 </body>
 
 </html>
