@@ -1,26 +1,3 @@
-
-     <?php
-  $name = $_POST['name'];
-  $visitor_email = $_POST['email'];
-  $message = $_POST['message'];
-
-  $email_from = 'huanineupane@gmail.com';
-
-  $email_subject = "New Form submission";
-
-  $email_body = "You have received a new message from the user $name.\n".
-                            "Here is the message:\n $message".
-  mail(to,subject,message,headers);
-
-
-  $to = "huanineupane@gmail.com";
-
-  $headers = "From: $email_from \r\n";
-
-  $headers .= "Reply-To: $visitor_email \r\n";
-
-  mail($to,$email_subject,$email_body,$headers);
-       ?>
        
 <!DOCTYPE html>
 <html lang="en">
@@ -96,7 +73,7 @@
         <h4>1. SARASCARE</h4>
         <div class="project-summary"><p><img src="images/saras.png" alt="Sara face" ></p>
           <p>A platform where people can report crimes against women/girls anonymously. Allow login of existing user and sign up for new users.</p>
-        <a href="https://app.saras.care/" target="_blank">View project</a></div>
+        <a href="https://saras.care/" target="_blank">View project</a></div>
         <br>
         <h4>Contributions:</h4>
           <ul>
@@ -179,8 +156,8 @@
      <h3>Available upon request</h3>
    </section>
    <!-- ************Form************ -->
-   <section>
-    <h2>Ask me a question! :)</h2>
+<!--    <section>
+    <h2>Ask me a question! :)</h2> -->
 
 <!--         <form 
   action="form-to-email.php"
@@ -196,7 +173,7 @@
         <input class = "form-submit-button" type="submit" value="Submit">
       </form> 
       <br> -->
-
+<!-- 
           <form method="post" name="myemailform" action="form-to-email.php">
 
 
@@ -210,7 +187,7 @@
 
           </form>
    
-   </section>
+   </section> -->
 
   </main>
 
