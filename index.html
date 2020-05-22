@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Girassol|Raleway&display=swap" rel="stylesheet">
   <title>Resume: Huani</title>
   <link rel="stylesheet" href="CSS/style.css">
+  <script src="script/jquery"></script>
 </head>
 
 <body>
@@ -24,6 +25,14 @@
         </div>
     </section>
     </header>
+          <!-- Online resume link -->
+    <section>
+      <h2>Please visit my online link</h2>
+      <div id="flip">Click to view</div>
+      <div id="panel">
+        <a href="https://huanineu.github.io/Resume/" target="_blank">Interactive resume</a></p>
+        </div>
+    </section>
   
       <!-- ************************ Profile ********************** -->
     <section>
@@ -156,38 +165,13 @@
      <h3>Available upon request</h3>
    </section>
    <!-- ************Form************ -->
-<!--    <section>
-    <h2>Ask me a question! :)</h2> -->
-
-<!--         <form 
-  action="form-to-email.php"
-  method="POST"
-  name="EmailForm">
-        <label for="name">Your name: </label><br>
-        <input type="text" id="name" name="name" placeholder="Huani"><br>
-        <label for="question">Your question: </label><br>
-        <input type="text" id="question" name="question" placeholder="How did you do this? :P"><br>
-        <label for="contact">How do I get back to you?</label><br>
-        <label for="method">Email/Phone </label><br>
-        <input type="contact" id="contact" name="contact" placeholder="041234567"><br><br>
-        <input class = "form-submit-button" type="submit" value="Submit">
-      </form> 
-      <br> -->
-<!-- 
-          <form method="post" name="myemailform" action="form-to-email.php">
-
-
-          Enter Name: <input type="text" name="name">
-
-          Enter Email Address:  <input type="text" name="email">
-
-          Enter Message:  <textarea name="message"></textarea>
-
-          <input type="submit" value="Send Form">
-
-          </form>
-   
-   </section> -->
+<script> 
+  $(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
 
   </main>
 

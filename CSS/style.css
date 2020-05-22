@@ -36,6 +36,17 @@ header{
   padding: 10px;
 }
 
+
+#panel, #flip {
+    padding: 16px;
+    background-color: #80bfff;
+    border: solid 1px #c3c3c3;
+}
+
+#panel{
+  display: none;
+}
+
 .info{
   color: white;
 }
